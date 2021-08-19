@@ -1,10 +1,41 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { useState, useEffect } from "react";
+import { 
+    View,
+    Text,
+    TouchableOpacity,
+    FlatList
+ } from "react-native";
 
-export default function Invite() {
+ import database from '../../config/firebase'
+ import { FontAwesome } from "@expo/vector-icons";
+ import stykes from './style'
+import styles from "./style";
+
+export default function Invite({ navigation }) {
+    const [invite, setInvite] = useState([])
+
+
+    useEffect(()=>{
+        // * Accessing coleection from firebase db
+        // * Passing as a parameter a query
+        database.collection("Invites").onSnapshot((query)=>{
+            const list = []
+            query.forEach((doc)=>{
+                list.push({...doc.data(), id: doc.id})
+            })
+            setInvite(list)
+        })
+    }, [])
+
     return(
-        <View>
-            <Text>Invite Page</Text>
+        <View style={styles.invite}>
+           <FlatList/>
+           <TouchableOpacity 
+           style={styles.buttonNewInvite}
+           onPress={()=> navigation.navigate("NewInvite")}
+           >
+               <Text style={styles.iconButton}>+</Text>
+           </TouchableOpacity>
         </View>
     )
 }
