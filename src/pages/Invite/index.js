@@ -46,12 +46,12 @@ export default function Invite({ navigation }) {
               </TouchableOpacity>
               <Text
                 style={styles.descriptionInvite}
-                onPress={() => {
+                onPress={() =>
                   navigation.navigate("Details", {
                     id: item.id,
-                    descripton: item.description,
-                  });
-                }}
+                    description: item.description,
+                  })
+                }
               >
                 {item.description}
               </Text>

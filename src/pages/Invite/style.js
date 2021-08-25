@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     borderBottomColor: "#ff00ff",
   },
-  descriptionTask: {},
 });
 
 export default styles;
