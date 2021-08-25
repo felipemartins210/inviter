@@ -9,7 +9,7 @@ export default function Invite({ navigation }) {
   const [invite, setInvite] = useState([]);
 
   function deleteInvite(id) {
-    database.collection("Invites").doc(id).detele();
+    database.collection("Invites").doc(id).delete();
   }
 
   useEffect(() => {
