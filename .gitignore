@@ -8,6 +8,12 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+.eslintrc
+.prettierrc.json
 
 # macOS
 .DS_Store
+
+# Ignore artifacts:
+build
+coverage
