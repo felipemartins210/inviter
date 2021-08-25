@@ -39,7 +39,7 @@ export default function Invite({ navigation }) {
                 }}
               >
                 <FontAwesome
-                  name="star"
+                  name="check"
                   size={23}
                   color="#f92a6a"
                 ></FontAwesome>
