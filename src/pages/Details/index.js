@@ -32,7 +32,7 @@ export default function Details({ navigation, route }) {
           editInvite(descriptionEdit, idInvite);
         }}
       >
-        <Text style={styles.iconButton}>Salvar</Text>
+        <Text style={styles.iconButton}>Adicionar</Text>
       </TouchableOpacity>
     </View>
   );
