@@ -21,9 +21,12 @@ export default function Login() {
   };
 
   return (
-    <View>
-      <Text>Login</Text>
-    </View>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <Text>Crews & Families</Text>
+    </KeyboardAvoidingView>
   );
 }
 
