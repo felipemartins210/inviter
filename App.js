@@ -6,13 +6,29 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Invite from "./src/pages/Invite";
 import NewInvite from "./src/pages/NewInvite";
 import Details from "./src/pages/Details";
+import Login from "./src/pages/Login";
+import NewUser from "./src/pages/NewUser";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Invite">
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="NewUser"
+          component={NewUser}
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen
           name="Invite"
           component={Invite}
