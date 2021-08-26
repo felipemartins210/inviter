@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
-import database from "../../config/firebase";
+import firebase from "../../config/firebase";
 import { FontAwesome } from "@expo/vector-icons";
 import styles from "./style";
 
 export default function Invite({ navigation }) {
   const [invite, setInvite] = useState([]);
+  const database = firebase.firestore();
 
   function deleteInvite(id) {
     database.collection("Invites").doc(id).delete();
