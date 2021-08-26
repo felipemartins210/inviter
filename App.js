@@ -19,14 +19,14 @@ export default function App() {
           name="Login"
           component={Login}
           options={{
-            headerTintColor: "#f92e66",
+            headerShown: false,
           }}
         />
         <Stack.Screen
           name="NewUser"
           component={NewUser}
           options={{
-            headerTintColor: "#f92e66",
+            headerShown: false,
           }}
         />
         <Stack.Screen
