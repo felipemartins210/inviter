@@ -7,7 +7,7 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 
-import firebase from "../../config/firebase";
+import firebase from '../../config/firebase';
 import styles from "./style";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
@@ -37,7 +37,7 @@ export default function Login({ navigation }) {
       // behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.container}
     >
-      <Text style={styles.title}>Crews & Families</Text>
+      <Text style={styles.title}>Circus Login</Text>
       <TextInput
         style={styles.input}
         placeholder="E-mail"

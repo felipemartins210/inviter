@@ -7,9 +7,9 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 
-import firebase from "../../config/firebase";
 import styles from "./style";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import firebase from "../../config/firebase.js";
 
 export default function NewUser({ navigation }) {
   const [email, setEmail] = useState("");

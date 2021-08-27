@@ -1,15 +1,21 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+//! Buscar documentação para implementar Barra inferior de Menu
+//TODO -> Implementar Bottom Tab Navigator
+//import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Invite from "./src/pages/Invite";
 import NewInvite from "./src/pages/NewInvite";
 import Details from "./src/pages/Details";
 import Login from "./src/pages/Login";
 import NewUser from "./src/pages/NewUser";
+import Home from "./src/pages/Home";
 
 const Stack = createStackNavigator();
+//TODO -> Implementar Bottom Tab Navigator
+//const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
@@ -20,6 +26,13 @@ export default function App() {
           component={Login}
           options={{
             headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            headerTintColor: "#f92e66",
           }}
         />
         <Stack.Screen

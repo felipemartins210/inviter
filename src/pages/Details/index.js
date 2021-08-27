@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 
-import firebase from "../../config/firebase";
+import firebase from "../../config/firebase.js";
 import styles from "./style";
 
 export default function Details({ navigation, route }) {
