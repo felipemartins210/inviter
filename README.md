@@ -13,3 +13,7 @@ Find "MAX_TIMER_DURATION_MS"
 Change from 60 * 1000 to 10000 * 1000
 
 Save the file and rebuild your app.
+
+## Demo
+
+[![Demo Invite App](https://github.com/felipemartins210/inviter/video-demo.gif)](#)
