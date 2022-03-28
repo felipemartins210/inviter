@@ -16,4 +16,4 @@ Save the file and rebuild your app.
 
 ## Demo
 
-[![Demo Invite App](https://github.com/felipemartins210/inviter/video-demo.gif)](#)
+[![Demo Invite App](https://github.com/felipemartins210/inviter/blob/main/video-demo.gif)](#)
